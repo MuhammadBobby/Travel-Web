@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/22f19496c5.js" crossorigin="anonymous"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  </head>
+  <body style="font-family: 'Crimson Text'; font-weight: 600" >
+    <!-- navbar -->
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 shadow-sm bg-opacity-20 backdrop-blur-sm">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-2xl text-teal-600 font-bold whitespace-nowrap">TravelMedia</span>
+        </a>
+        <div class="flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
+          <button type="button" class="text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-4 py-2 text-center">Get started</button>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-200 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+          <ul id="nav" class="flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-transparent font-semibold lg:text-xl">
+            <li>
+              <a href="#" class="nav-item block py-2 px-3 text-white bg-teal-700 rounded-sm lg:bg-transparent lg:text-teal-700 lg:p-0" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-item block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-teal-700 lg:p-0">About</a>
+            </li>
+            <li>
+              <a href="#best" class="nav-item block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-teal-700 lg:p-0">Features</a>
+            </li>
+            <li>
+              <a href="#popular" class="nav-item block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-teal-700 lg:p-0">Popular</a>
+            </li>
+            <li>
+              <a href="#blog" class="nav-item block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-teal-700 lg:p-0">Blogs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- jumbotron -->
+    <section class="bg-center bg-no-repeat bg-[url('assets/background-hero.jpg')] bg-cover bg-gray-400 bg-blend-multiply h-screen flex flex-wrap" style="background-image: url('assets/background-hero.jpg')">
+      <div class="w-1/3"></div>
+      <div>
+        <div class="px-4 max-w-screen-md py-24 pb-10 text-center lg:py-48 lg:pb-14 lg:mx-10 md:text-right">
+          <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Enjoy the holidays with TravelMedia</h1>
+          <p class="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 lg:px-0">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illum magnam, id atque quasi asperiores quaerat voluptatem provident explicabo. Perferendis beatae blanditiis eius ad ab, est, atque soluta at quod fugiat nihil..
+          </p>
+        </div>
+
+        <div class="flex flex-wrap justify-evenly items-center bg-white bg-opacity-5 backdrop-blur-md mr-32 rounded-md border border-slate-300 gap-3 mx-4 p-3 lg:p-5 lg:mx-10 max-w-screen-lg">
+          <div class="text-center p-2 rounded-md">
+            <select name="" id="" class="border-none bg-transparent text-white text-lg focus:ring-0">
+              <option selected class="text-slate-600 rounded-lg">Destination</option>
+            </select>
+            <p class="text-white text-xs font-light">this destination is available for booking</p>
+          </div>
+          <div class="text-center p-2 rounded-md">
+            <select name="" id="" class="border-none bg-transparent text-white text-lg focus:ring-0">
+              <option selected class="text-slate-600 rounded-lg">Destination</option>
+            </select>
+            <p class="text-white text-xs font-light">this destination is available for booking</p>
+          </div>
+          <div class="text-center bg-teal-800 p-2 rounded-md">
+            <select name="" id="" class="border-none bg-transparent text-white text-lg focus:ring-0">
+              <option selected class="text-slate-600 rounded-lg">Destination</option>
+            </select>
+            <p class="text-white text-xs font-light">this destination is available for booking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end jumbotron -->
+
+    <!-- about us -->
+    <section id="about" class="py-20 px-10 md:py-24 md:px-16 max-w-screen-2xl mx-auto flex flex-wrap flex-col-reverse md:flex-row justify-around items-center md:gap-10">
+      <div class="w-full lg:w-1/3 relative">
+        <img src="assets/f-4.jpg" alt="foto-1" loading="lazy" class="hidden md:block rounded-xl shadow-xl" />
+        <video class="bg-cover rounded-xl shadow-lg md:absolute -bottom-14 left-40" autoplay loop muted>
+          <source src="assets/video-travel.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="w-full my-8 lg:w-1/3 text-center lg:text-left">
+        <h2 class="text-lg font-bold text-amber-500">About Us</h2>
+        <h1 class="text-2xl font-extrabold text-slate-900 tracking-tighter md:text-4xl">Investigate All Corners Of The World With Us</h1>
+        <p class="mt-3 leading-tight">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae nisi excepturi tempore quae consectetur dolor enim deleniti, cumque perferendis tenetur deserunt error ratione quis saepe eum animi numquam voluptatem
+          necessitatibus id! Asperiores necessitatibus, et assumenda alias nobis rem optio sed architecto nemo.
+        </p>
+        <a href="#" class="inline-block mt-5 px-8 py-3 text-lg font-medium text-white bg-teal-800 rounded-lg hover:bg-teal-700 md:mt-8">Explore More!</a>
+      </div>
+    </section>
+    <!-- end about us -->
+
+    <!-- best features -->
+    <section id="best" class="bg-slate-200 py-20 px-10 md:py-24 md:px-16 max-w-screen-2xl mx-auto flex flex-wrap items-center justify-around">
+      <div class="w-full my-8 lg:w-1/3 text-center lg:text-left">
+        <h2 class="text-lg font-bold text-amber-500">What We Give</h2>
+        <h1 class="text-2xl font-extrabold text-slate-900 tracking-tighter md:text-4xl">Best Features For You</h1>
+        <p class="mt-3 leading-tight">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum ut delectus aut aliquam sunt. Facilis, suscipit placeat possimus similique provident excepturi nobis atque architecto quasi voluptatum.
+        </p>
+        <ul class="mt-10">
+          <!-- first -->
+          <li>
+            <div class="flex items-center gap-5 my-3">
+              <div class="text-emerald-700 p-3 rounded-md bg-emerald-200 w-fit h-fit text-xl">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <div class="text-left">
+                <h3 class="text-base font-extrabold md:text-lg">Travel Guide</h3>
+                <p class="text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+              </div>
+            </div>
+          </li>
+          <!-- second -->
+          <li>
+            <div class="flex items-center gap-5 my-3">
+              <div class="text-rose-700 p-3 rounded-md bg-rose-200 w-fit h-fit text-xl">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <div class="text-left">
+                <h3 class="text-base font-extrabold md:text-lg">Reliable Tour</h3>
+                <p class="text-sm font-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, eius necessitatibus.</p>
+              </div>
+            </div>
+          </li>
+          <!-- third -->
+          <li>
+            <div class="flex items-center gap-5 my-3">
+              <div class="text-amber-700 p-3 rounded-md bg-amber-200 w-fit h-fit text-xl">
+                <i class="fa-solid fa-hand-holding-hand"></i>
+              </div>
+              <div class="text-left">
+                <h3 class="text-base font-extrabold md:text-lg">Friendly Price</h3>
+                <p class="text-sm font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio!</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="inline-block mt-5 px-8 py-3 text-lg font-medium text-white bg-teal-800 rounded-lg hover:bg-teal-700 md:mt-8">Explore Now!</a>
+      </div>
+
+      <div class="w-full my-8 lg:w-1/3 grid grid-cols-2 gap-1">
+        <img src="assets/f-1.jpg" alt="picture not found" loading="lazy" class="rounded-tr-[3.5rem] rounded-bl-[3.5rem]" />
+        <img src="assets/f-2.jpg" alt="picture not found" loading="lazy" class="rounded-tl-[3.5rem] rounded-br-[3.5rem]" />
+        <img src="assets/f-3.jpg" alt="picture not found" loading="lazy" class="rounded-tl-[3.5rem] rounded-br-[3.5rem]" />
+        <img src="assets/f-4.jpg" alt="picture not found" loading="lazy" class="rounded-tr-[3.5rem] rounded-bl-[3.5rem]" />
+      </div>
+    </section>
+    <!-- end best features -->
+
+    <!-- popular destination -->
+    <section id="popular" class="py-20 px-10 lg:py-24 lg:px-16">
+      <div class="text-center max-w-screen-sm mx-auto">
+        <h2 class="text-lg font-bold text-amber-500">For Destination</h2>
+        <h1 class="text-2xl font-extrabold text-slate-900 tracking-tighter lg:text-4xl">Popular Destinations</h1>
+        <p class="mt-1 leading-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad incidunt aspernatur, quae voluptatibus, porro eveniet debitis tempora nemo commodi ab!</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center items-center mt-10 gap-8">
+        <!-- first destination -->
+        <div class="w-full lg:w-1/4 relative">
+          <img src="assets/destination-1.jpg" alt="image not found" loading="lazy" class="w-full rounded-lg shadow-xl" />
+          <div class="absolute bottom-0 left-0 p-4 text-white bg-gray-500 backdrop-blur-sm bg-opacity-30 rounded-b-lg flex justify-between items-center w-full">
+            <div>
+              <h3 class="text-lg font-bold">Kuta Bali Beach</h3>
+              <p class="text-sm font-light">Bali, Indonesia.</p>
+            </div>
+          <button class="p-2 rounded-lg border border-white">$ 100.00</button>
+          </div>
+
+          <div class="absolute top-10 right-0 bg-gray-500 backdrop-blur-sm bg-opacity-30 py-1 px-3 rounded-l-lg">
+            <p class="text-amber-400 text-xs"><i class="fa-solid fa-star"></i> <span class="text-white">5.0 / 5.0</span></p></p>
+          </div>
+        </div>
+        <!-- second destination -->
+        <div class="w-full lg:w-1/4 relative">
+          <img src="assets/destination-2.jpg" alt="image not found" loading="lazy" class="w-full rounded-lg shadow-xl" />
+          <div class="absolute bottom-0 left-0 p-4 text-white bg-gray-500 backdrop-blur-sm bg-opacity-30 rounded-b-lg flex justify-between items-center w-full">
+            <div>
+              <h3 class="text-lg font-bold">Alps</h3>
+              <p class="text-sm font-light">Swiss.</p>
+            </div>
+          <button class="p-2  rounded-lg border border-white">$ 100.00</button>
+          </div>
+
+          <div class="absolute top-10 right-0 bg-gray-500 backdrop-blur-sm bg-opacity-30 py-1 px-3 rounded-l-lg">
+            <p class="text-amber-400 text-xs"><i class="fa-solid fa-star"></i> <span class="text-white">5.0 / 5.0</span></p></p>
+          </div>
+        </div>
+        <!-- third destination -->
+        <div class="w-full lg:w-1/4 relative">
+          <img src="assets/destination-3.jpg" alt="image not found" loading="lazy" class="w-full rounded-lg shadow-xl" />
+          <div class="absolute bottom-0 left-0 p-4 text-white bg-gray-500 backdrop-blur-sm bg-opacity-30 rounded-b-lg flex justify-between items-center w-full">
+            <div>
+              <h3 class="text-lg font-bold">Amsterdam Canal Ring</h3>
+              <p class="text-sm font-light">Amsterdam, Netherlands.</p>
+            </div>
+          <button class="p-2  rounded-lg border border-white">$ 100.00</button>
+          </div>
+
+          <div class="absolute top-10 right-0 bg-gray-500 backdrop-blur-sm bg-opacity-30 py-1 px-3 rounded-l-lg">
+            <p class="text-amber-400 text-xs"><i class="fa-solid fa-star"></i> <span class="text-white">5.0 / 5.0</span></p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end popular destination -->
+
+    <!-- blog -->
+    <section id="blog" class="bg-slate-200 py-20 px-10 lg:py-24 lg:px-16 max-w-screen-2xl mx-auto">
+      <div class="text-center max-w-screen-sm mx-auto">
+        <h2 class="text-lg font-bold text-amber-500">Blog</h2>
+        <h1 class="text-2xl font-extrabold text-slate-900 tracking-tighter lg:text-4xl">Our Blogs</h1>
+        <p class="mt-1 leading-tight">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque vero iusto natus quaerat dolorem voluptatum.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 justify-center items-center mt-10 lg:mx-24">
+        <!-- first blog -->
+        <div class="w-full p-5">
+          <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row lg:max-w-xl hover:bg-gray-100 lg:px-3">
+            <img class="object-cover w-full rounded-t-lg h-36 lg:w-48 lg:rounded-lg " src="assets/blog-1.jpg" alt="image not found" loading="lazy"/>
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Compass to the Future</h5>
+                <p class="mb-3 font-normal text-gray-700 text-justify leading-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus vitae perspiciatis ipsam expedita deserunt excepturi, ullam iure tempora nostrum...</p>
+                
+            </div>
+          </a>
+        </div>
+        <!-- second blog -->
+        <div class="w-full p-5">
+          <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row lg:max-w-xl hover:bg-gray-100 lg:px-3">
+            <img class="object-cover w-full rounded-t-lg h-36 lg:w-48 lg:rounded-lg " src="assets/blog-2.jpg" alt="image not found" loading="lazy"/>
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">In Flight Travelling</h5>
+                <p class="mb-3 font-normal text-gray-700 text-justify leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptate sequi id, sint quaerat eveniet in, vero sunt quia ex, non saepe...</p>
+                
+            </div>
+          </a>
+        </div>
+        <!-- third blog -->
+        <div class="w-full p-5">
+          <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row lg:max-w-xl hover:bg-gray-100 lg:px-3">
+            <img class="object-cover w-full rounded-t-lg h-36 lg:w-48 lg:rounded-lg " src="assets/blog-3.jpg" alt="image not found" loading="lazy"/>
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Kuta Beach is Busy With Tourists</h5>
+                <p class="mb-3 font-normal text-gray-700 text-justify leading-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus vitae perspiciatis ipsam expedita deserunt excepturi, ullam iure tempora nostrum.</p>
+                
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end blog -->
+
+    <!-- ending -->
+    <section class="py-20 px-10 lg:px-20 relative">
+      <div class="flex justify-center">
+      <div class="absolute top-14 md:top-20 md:w-full flex flex-col lg:flex-row justify-between lg:items-center bg-white border-2 border-slate-200 rounded-lg p-5 max-w-5xl mx-auto shadow-xl">
+        <div class="w-fit">
+          <h2 class="text-lg font-bold text-amber-500">Newsletter</h2>
+          <h1 class="text-2xl font-extrabold text-slate-900 tracking-tighter lg:text-4xl">Our Newsletter</h1>
+        </div>
+
+        <div class="w-full lg:w-fit mt-5 lg:flex items-center gap-3">
+          <div>
+            <p class="text-base font-semibold text-slate-600">Enter your Email!</p>
+            <input type="email" name="" id="" class="w-full text-sm text-slate-400 border-1 border-slate-200 rounded-full p-2 lg:w-64" value="example@gmail.com">
+          </div>
+          <button class="w-full mt-3 text-base text-white bg-teal-500 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-full px-5 py-2.5 text-center lg:w-fit lg:h-fit">subscribe</button>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- ending -->
+
+
+    <!-- footer -->
+<footer class="bg-slate-200 pt-32 md:pt-20">
+  <div class="mx-auto w-full max-w-screen-xl p-4">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap ">Flowbite</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Resources</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                    </li>
+                    <li>
+                        <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Follow us</h2>
+                <ul class="text-gray-500 font-medium">
+                    <li class="mb-4">
+                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase ">Legal</h2>
+                <ul class="text-gray-500 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="text-center bg-teal-800 py-5">
+      <span class="text-sm text-white sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+      </span>
+  </div>
+</footer>
+    <!-- end footer -->
+
+    
+    <script src="source/navbar.js"></script>
+
+    <!-- flowbite -->
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
